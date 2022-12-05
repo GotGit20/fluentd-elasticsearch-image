@@ -1,4 +1,4 @@
-FROM gcr.io/google-containers/fluentd-elasticsearch:v2.4.0
+FROM fluent/fluentd:edge-debian-armhf
 RUN apt-get update 
 RUN ulimit -n 65536 
 RUN apt-get install -y curl 
