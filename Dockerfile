@@ -1,4 +1,4 @@
-FROM k8s.gcr.io/fluentd-gcp:1.30 
+FROM gcr.io/google-containers/fluentd-elasticsearch:v2.4.0
 RUN apt-get update 
 RUN ulimit -n 65536 
 RUN apt-get install -y curl 
