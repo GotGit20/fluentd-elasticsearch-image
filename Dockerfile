@@ -1,5 +1,5 @@
 FROM fluent/fluentd:edge-debian
-RUN /bin/sh -c apt-get update 
-RUN /bin/sh -c ulimit -n 65536 
-RUN /bin/sh -c apt-get install -y curl 
-RUN /bin/sh -c gem install fluent-plugin-elasticsearch -v 5.2.4
+RUN apt-get update 
+RUN ulimit -n 65536 
+RUN apt-get install -y curl 
+RUN gem install fluent-plugin-elasticsearch -v 5.2.4
