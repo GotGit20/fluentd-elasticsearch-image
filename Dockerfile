@@ -1,4 +1,4 @@
-FROM fluent/fluentd:edge-debian-armhf
+FROM fluent/fluentd:edge-debian
 RUN /bin/sh -c apk update 
 RUN /bin/sh -c ulimit -n 65536 
 RUN /bin/sh -c apk install -y curl 
