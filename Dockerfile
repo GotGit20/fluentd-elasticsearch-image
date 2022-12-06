@@ -1,4 +1,4 @@
-FROM fluent/fluentd:edge-debian
+FROM fluent/fluentd
 RUN apt-get update 
 RUN ulimit -n 65536 
 RUN apt-get install -y curl 
